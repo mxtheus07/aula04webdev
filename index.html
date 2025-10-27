@@ -1,1 +1,29 @@
+<!DOCTYPE html>
 
+<header>
+    <h1>Primeiro Post</h1>
+</header>
+
+<p>Conteudo do primeiro Post</p>
+    <h2>Novo Conteudo</h2>
+
+<label>Nome:</label>
+<input>
+<button>Ok</button>
+
+<link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+
+<script>
+
+    function pedirNome(){
+    txtNome = document.querySelector("input")
+    txtNome.value = "Digite seu nome"
+    parTxt = document.createElement("p")
+    parTxt.inner = "Leia a mensagem à cima!"
+    document.body.appendChild(parTxt)
+
+    }
+    btOk = document.querySelector("button")
+    btOk.addEventListener("click", pedirNome)
+
+</script>
